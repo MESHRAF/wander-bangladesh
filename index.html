@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wander Bangladesh — Discover the Beauty of Bangladesh</title>
+<meta name="description" content="Wander Bangladesh: a travel vlog documenting the beaches, hills, forests and streets of Bangladesh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__brand">Wander <em>Bangladesh</em></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#vlogs" class="nav__link">Vlogs</a>
+      <a href="#destinations" class="nav__link">Destinations</a>
+      <a href="#videos" class="nav__link">Watch</a>
+      <a href="#gallery" class="nav__link">Gallery</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <img src="images/sajek.jpeg" alt="Aerial view of Sajek Valley rising above the clouds" class="hero__img">
+  <div class="hero__scrim"></div>
+  <div class="hero__content">
+    <p class="hero__kicker">Travel · Explore · Experience</p>
+    <h1 class="hero__title">Discover the<br>Beauty of Bangladesh</h1>
+    <p class="hero__text">From the world's longest sea beach to hill mist above Sajek and the
+      mangrove home of the Royal Bengal Tiger — this is Bangladesh as I've walked through
+      it, camera in hand, one journey at a time.</p>
+    <a href="#vlogs" class="btn btn--primary">Explore My Vlogs</a>
+  </div>
+  <a href="#vlogs" class="hero__scroll" aria-label="Scroll to vlogs">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== LATEST VLOGS ===== -->
+<section class="section" id="vlogs">
+  <div class="section__head">
+    <h2 class="section__title">Latest vlogs</h2>
+    <p class="section__lede">Three recent trips, told in full — the road there, the people met,
+      and the moment the place finally opened up.</p>
+  </div>
+
+  <div class="vlogs">
+    <article class="vlog-card">
+      <div class="vlog-card__media">
+        <img src="images/coxs-bazar.jpeg" alt="A couple walking along the sand at Cox's Bazar beside fishing boats" loading="lazy">
+      </div>
+      <div class="vlog-card__body">
+        <p class="vlog-card__meta">Cox's Bazar · March 2026</p>
+        <h3 class="vlog-card__title">Sea &amp; Sunset</h3>
+        <p class="vlog-card__text">Ninety miles of unbroken sand, colourful fishing boats
+          at anchor, and a sky that turns the whole beach gold by six in the evening.</p>
+        <button class="watch-story" data-target="videos">Watch story →</button>
+      </div>
+    </article>
+
+    <article class="vlog-card">
+      <div class="vlog-card__media">
+        <img src="images/sajek.jpeg" alt="Sajek Valley resort spread across a ridge above rolling clouds" loading="lazy">
+      </div>
+      <div class="vlog-card__body">
+        <p class="vlog-card__meta">Sajek Valley · February 2026</p>
+        <h3 class="vlog-card__title">Into the Clouds</h3>
+        <p class="vlog-card__text">A jeep ride up switchbacks in the Chittagong Hill Tracts,
+          ending above the cloud line where the valley disappears by mid-morning.</p>
+        <button class="watch-story" data-target="videos">Watch story →</button>
+      </div>
+    </article>
+
+    <article class="vlog-card">
+      <div class="vlog-card__media">
+        <img src="images/sundarban.jpeg" alt="A Royal Bengal Tiger on the muddy bank of a Sundarbans waterway" loading="lazy">
+      </div>
+      <div class="vlog-card__body">
+        <p class="vlog-card__meta">Sundarbans · January 2026</p>
+        <h3 class="vlog-card__title">Where the Tiger Walks</h3>
+        <p class="vlog-card__text">Two days by boat through the largest mangrove forest on
+          earth, tracking pug marks along the bank until one finally showed itself.</p>
+        <button class="watch-story" data-target="gallery">Watch story →</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== POPULAR DESTINATIONS ===== -->
+<section class="section section--tint" id="destinations">
+  <div class="section__head">
+    <h2 class="section__title">Popular destinations</h2>
+    <p class="section__lede">Six places that keep pulling me back, from the longest beach in
+      the world to the narrow lanes of Old Dhaka.</p>
+  </div>
+
+  <div class="mosaic">
+    <a class="mosaic__tile mosaic__tile--wide" href="#gallery">
+      <img src="images/coxs-bazar.jpeg" alt="Cox's Bazar beach with fishing boats and flags">
+      <div class="mosaic__label">
+        <h3>Cox's Bazar</h3>
+        <p>The longest natural sea beach in the world</p>
+      </div>
+    </a>
+    <a class="mosaic__tile mosaic__tile--tall" href="#gallery">
+      <img src="images/sajek.jpeg" alt="Sajek Valley above the clouds">
+      <div class="mosaic__label">
+        <h3>Sajek Valley</h3>
+        <p>Hill mist and cloud-line sunrises</p>
+      </div>
+    </a>
+    <a class="mosaic__tile" href="#gallery">
+      <img src="images/sundarban.jpeg" alt="Royal Bengal Tiger in the Sundarbans">
+      <div class="mosaic__label">
+        <h3>Sundarbans</h3>
+        <p>The world's largest mangrove forest</p>
+      </div>
+    </a>
+    <a class="mosaic__tile" href="#gallery">
+      <img src="images/saint-martin.jpeg" alt="Turquoise water at Saint Martin's Island">
+      <div class="mosaic__label">
+        <h3>Saint Martin's Island</h3>
+        <p>Bangladesh's only coral island</p>
+      </div>
+    </a>
+    <a class="mosaic__tile mosaic__tile--wide" href="#gallery">
+      <img src="images/dhaka.jpeg" alt="A busy street in Old Dhaka">
+      <div class="mosaic__label">
+        <h3>Dhaka</h3>
+        <p>Rickshaw bells and narrow old-town lanes</p>
+      </div>
+    </a>
+    <a class="mosaic__tile" href="#gallery">
+      <img src="images/village.jpeg" alt="A footpath through green paddy fields in rural Bangladesh">
+      <div class="mosaic__label">
+        <h3>Rural Bangladesh</h3>
+        <p>Paddy fields, palm trees and quiet paths</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ===== VIDEO VLOGS ===== -->
+<section class="section" id="videos">
+  <div class="section__head">
+    <h2 class="section__title">Video vlogs</h2>
+    <p class="section__lede">Full stories, filmed on the road. Press play and travel along.</p>
+  </div>
+
+  <div class="videos">
+    <article class="video-card">
+      <video controls preload="metadata" poster="images/coxs-bazar.jpeg">
+        <source src="videos/coxs-bazar.mp4" type="video/mp4">
+        Your browser doesn't support embedded video. You can download it
+        <a href="videos/coxs-bazar.mp4">here</a>.
+      </video>
+      <div class="video-card__body">
+        <p class="vlog-card__meta">Cox's Bazar</p>
+        <h3 class="vlog-card__title">Sea &amp; Sunset</h3>
+        <p class="vlog-card__text">Walking the tideline at golden hour, past boats
+          waiting for the next catch to come in.</p>
+      </div>
+    </article>
+
+    <article class="video-card">
+      <video controls preload="metadata" poster="images/sajek.jpeg">
+        <source src="videos/sajek.mp4" type="video/mp4">
+        Your browser doesn't support embedded video. You can download it
+        <a href="videos/sajek.mp4">here</a>.
+      </video>
+      <div class="video-card__body">
+        <p class="vlog-card__meta">Sajek Valley</p>
+        <h3 class="vlog-card__title">Into the Clouds</h3>
+        <p class="vlog-card__text">The switchback drive up, and the moment the whole
+          valley vanishes under a sea of white.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="section section--tint" id="gallery">
+  <div class="section__head">
+    <h2 class="section__title">Photo gallery</h2>
+    <p class="section__lede">Frames from the road. Tap any photo to see it larger.</p>
+  </div>
+
+  <div class="gallery">
+    <button class="gallery__item" data-full="images/coxs-bazar.jpeg" data-caption="Cox's Bazar — evening walk on the sand">
+      <img src="images/coxs-bazar.jpeg" alt="A couple walking on Cox's Bazar beach" loading="lazy">
+    </button>
+    <button class="gallery__item" data-full="images/sajek.jpeg" data-caption="Sajek Valley — above the cloud line">
+      <img src="images/sajek.jpeg" alt="Sajek Valley resort above the clouds" loading="lazy">
+    </button>
+    <button class="gallery__item" data-full="images/sundarban.jpeg" data-caption="Sundarbans — a tiger on the riverbank">
+      <img src="images/sundarban.jpeg" alt="Royal Bengal Tiger in the Sundarbans" loading="lazy">
+    </button>
+    <button class="gallery__item" data-full="images/saint-martin.jpeg" data-caption="Saint Martin's Island — clear water, quiet coast">
+      <img src="images/saint-martin.jpeg" alt="Turquoise water at Saint Martin's Island" loading="lazy">
+    </button>
+    <button class="gallery__item" data-full="images/dhaka.jpeg" data-caption="Dhaka — a lane in the old town">
+      <img src="images/dhaka.jpeg" alt="A busy street in Old Dhaka" loading="lazy">
+    </button>
+    <button class="gallery__item" data-full="images/village.jpeg" data-caption="Rural Bangladesh — a path through the paddy">
+      <img src="images/village.jpeg" alt="A footpath through green paddy fields" loading="lazy">
+    </button>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close image">&times;</button>
+  <figure class="lightbox__figure">
+    <img src="" alt="" id="lightboxImg">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="about__media">
+    <img src="images/village.jpeg" alt="A path through green paddy fields in rural Bangladesh">
+  </div>
+  <div class="about__body">
+    <h2 class="section__title">About the vlogger</h2>
+    <p class="about__text">Hi, I'm Meshraf. I created Wander Bangladesh to document beautiful
+      places, local culture, food and little moments that make travelling special.</p>
+    <p class="about__text">Every trip on this site is one I've made myself — the beaches,
+      the hill roads, the boat rides through the mangroves — filmed and written up so
+      you can see this country the way I've come to see it.</p>
+    <a href="#contact" class="btn btn--outline">Get in touch</a>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="section__head">
+    <h2 class="section__title">Have a place to recommend?</h2>
+    <p class="section__lede">Tell me where to go next — I read every message.</p>
+  </div>
+
+  <form class="contact-form" id="contactForm">
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name">
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com">
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Tell me about the place..."></textarea>
+    </div>
+    <button type="submit" class="btn btn--primary">Send Message</button>
+    <p class="form__success" id="formSuccess" role="status">Thanks — your message has been sent!</p>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__brand">Wander Bangladesh</p>
+    <p class="footer__tag">Travel responsibly · Leave no trace</p>
+    <p class="footer__copy">© 2026 Wander Bangladesh</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
